@@ -7,7 +7,6 @@ gem 'rails', '3.2.8'
 
 #Database gems
 gem 'mysql2'
-gem 'activerecord-mysql2-adapter'
 
 
 # Gems used only for assets and not required
@@ -24,6 +23,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'devise'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -37,4 +38,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'

@@ -1,0 +1,22 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  color: #03507B;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main_links {
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+}
+
+h1 {
+  text-align: center;
+}

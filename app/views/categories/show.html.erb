@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<% @posts = list_of_posts(@category.id) %>
+<% if !@posts.present? %>
+  <h3> There are no posts in this category! </h3>
+<% elsif @posts.is_a? Post %>
+  <h3><%= @posts.title %></h3>
+  <p><%= @posts.content%></p>
+<% else %>  
+  <% list_of_posts(@category.id).each do |post| %>
+    <h3><%= post.title %></h3>
+    <p><%= post.content%></p>
+  <% end %>
+<% end %>

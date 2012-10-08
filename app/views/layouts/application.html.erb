@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BloggingForFun</title>
+  <title>W00t W00t Blog</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <h1>W00t W00t blog</h1>
+  <div class="main_links">
+    <%= links_to_categories.html_safe %>
+  </div>
+  <div class="content_links">
+  <% if user_signed_in? && current_user.email == "acemacu@gmail.com" %>
+    <%= links_to_create_content.html_safe %>
+  <% end %>
+  </div>
+  </br>
+  <div class="main_content">
+    <%= yield %>
+  </div>
 </body>
 </html>
